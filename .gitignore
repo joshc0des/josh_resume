@@ -1,0 +1,5 @@
+# Ignored files
+*.aux
+*.log
+*.out
+*.gz
