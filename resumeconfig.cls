@@ -91,8 +91,8 @@
             #2 \CustomBullet #3 \CustomBullet \href{mailto:#4}{#4} \\
             \href{https://linkedin.com/in/#5}{linkedin.com/in/#5} \CustomBullet \href{https://github.com/#6}{github.com/#6}
             \IfValueT{#7}{ \CustomBullet \href{https://#7}{#7}}
-        }\\[3pt]
-    \end{center}    
+        }        
+    \end{center}        
 }
 
 \newcommand{\Education}[4]{
@@ -110,19 +110,32 @@
         \textit{#2} & #4 \\
     \end{tabular*}
     
-    \begin{itemize}[noitemsep, topsep=0pt, leftmargin=3em]
+    \begin{itemize}[noitemsep, topsep=0pt, leftmargin=1.5em]
         #5
     \end{itemize}
 }
+
+\newcommand{\skill}[1]{\textbullet\ #1}
+
+\newenvironment{Skills}{
+	\begin{tabular}{@{}p{5cm}p{14cm}@{}}
+	}{
+	\end{tabular}
+	\vspace{-4pt}
+}
+
+\newcommand{\SkillCategory}[2]{
+	\textbf{#1:} & #2 \\[0.5em]
+}
+
+
 
 \NewDocumentEnvironment{ActivitiesList}{O{3} O{1in} +b}{
 \vspace{-12pt}
     \setlength{\columnsep}{10pt}
     \begin{multicols}{#1}
-        \begin{itemize}[noitemsep, topsep=0pt, leftmargin=0.5em, label={$\CustomBullet$}]
-            \small{
-                #3
-                }
+        \begin{itemize}[noitemsep, topsep=0pt, leftmargin=1.5em, label={$\CustomBullet$}]
+            \small #3
         \end{itemize}
     \end{multicols}
 }{}
