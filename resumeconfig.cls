@@ -83,15 +83,15 @@
     \hspace{0.5em}%
 }
 
-\NewDocumentCommand{\Header}{m m m m m m o}{
+\NewDocumentCommand{\Header}{m m m m m m}{
     \fancyhf{}
     \begin{center}
         {\Huge\textbf{#1}}\\[4pt]
         \textcolor{black}{
-            #2 \CustomBullet #3 \CustomBullet \href{mailto:#4}{#4} \\
-            \href{https://linkedin.com/in/#5}{linkedin.com/in/#5} \CustomBullet \href{https://github.com/#6}{github.com/#6}
-            \IfValueT{#7}{ \CustomBullet \href{https://#7}{#7}}
-        }        
+            #2 \CustomBullet #3 \CustomBullet \href{mailto:#4}{#4}
+            \href{https://linkedin.com/in/#5}{linkedin.com/in/#5} \CustomBullet \href{https://github.com/#6}{github.com/#6}            
+        }\\[4pt]
+        \textbf{Secret Security Clearance (DoD) - Pending Adjudication}
     \end{center}        
 }
 
