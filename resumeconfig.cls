@@ -78,9 +78,9 @@
 %-------------------------------------------------------------------------------
 
 \newcommand*{\CustomBullet}{%
-    \hspace{0.1em}%
+    \hspace{0em}%
     \raisebox{-0.1em}{\scalebox{1.5}{$\cdot$}}%
-    \hspace{0.5em}%
+    \hspace{0.3em}%
 }
 
 \NewDocumentCommand{\Header}{m m m m m m}{
@@ -88,7 +88,7 @@
     \begin{center}
         {\Huge\textbf{#1}}\\[4pt]
         \textcolor{black}{
-            #2 \CustomBullet #3 \CustomBullet \href{mailto:#4}{#4}
+            #2 \CustomBullet #3 \CustomBullet \href{mailto:#4}{#4} \CustomBullet
             \href{https://linkedin.com/in/#5}{linkedin.com/in/#5} \CustomBullet \href{https://github.com/#6}{github.com/#6}            
         }\\[4pt]
         \textbf{Secret Clearance (Tier 3) - Pending Adjudication}
