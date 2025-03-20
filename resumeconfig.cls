@@ -89,7 +89,7 @@
         {\Huge\textbf{#1}}\\[4pt]
         \textcolor{black}{
             #2 \CustomBullet #3 \CustomBullet \href{mailto:#4}{#4} \CustomBullet
-            \href{https://linkedin.com/in/#5}{linkedin.com/in/#5} \CustomBullet \href{https://github.com/#6}{github.com/#6}            
+            \href{https://linkedin.com/in/#5}{linkedin.com/in/#5} \href{https://github.com/#6}{github.com/#6}            
         }\\[4pt]
         \textbf{Secret Clearance (Tier 3) - Pending Adjudication}
     \end{center}        
